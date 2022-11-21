@@ -1,0 +1,34 @@
+<br>
+<div id='adsense-block' style='display:block;text-align: center'>
+
+PASTE CODE OF ADSENSE AD THAT WILL DISPLAY UNDER POST TITLE HERE
+
+</div></br>
+<div id='adsense-content' style='display:block;margin-bottom:15px;margin-top:15px;text-align: center'>
+
+PASTE CODE OF ADSENSE THAT WILL DISPLAY IN MIDDLE HERE
+
+</div>
+   <br><div id='adsense-target'><data:post.body/></div></br>
+<script type='text/javascript'>
+function insertAfter(addition,target) {
+var parent = target.parentNode;
+if (parent.lastChild == target) {
+parent.appendChild(addition); 
+} else {
+parent.insertBefore(addition,target.nextSibling);
+}
+}
+var adscont = document.getElementById(&quot;adsense-content&quot;);
+var target = document.getElementById(&quot;adsense-target&quot;);
+var linebreak = target.getElementsByTagName(&quot;br&quot;);
+if (linebreak.length &gt; 0){
+insertAfter(adscont,linebreak[2]);
+}
+</script>
+<br><b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div id='adsense-content2' style='display:block;text-align: center'>
+
+PASTE CODE OF ADSENSE THAT WILL DISPLAY BELOW BLOG POST HERE
+
+</div></b:if></br>
